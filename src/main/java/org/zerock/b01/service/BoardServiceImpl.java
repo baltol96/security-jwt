@@ -1,5 +1,6 @@
 package org.zerock.b01.service;
 
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.modelmapper.ModelMapper;
@@ -10,7 +11,6 @@ import org.zerock.b01.domain.Board;
 import org.zerock.b01.dto.*;
 import org.zerock.b01.repository.BoardRepository;
 
-import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
